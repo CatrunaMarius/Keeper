@@ -1,6 +1,18 @@
 import React, { useState } from "react";
+import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import Zoom from '@material-ui/core/Zoom';
+
 
 function CreateArea(props) {
+
+  //  ======= condition rendem =======
+  const [isExpanded, setExpended] = useState(false)
+
+  function expand(){
+    setExpended(true)
+  }
+
   //========= Start Partea 1 ===========
   const [note, setNote] = useState({
     title: "",
@@ -33,21 +45,35 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form>
-        <input
+      <form className="create-note">
+       {/* ===== condition rendem ===== */}
+        {isExpanded && <input
           name="title"
           onChange={handleChange}
           value={note.title}
           placeholder="Title"
-        />
+        /> }
+
+
         <textarea
           name="content"
+        // ===== condition rendem =====
+        onClick={expand}
+        //===========================
           onChange={handleChange}
           value={note.content}
           placeholder="Take a note..."
-          rows="3"
+          // ===== condition rendem =====
+          rows={isExpanded ? 3: 1}
+          //========================
         />
-        <button onClick={submitNote}>Add</button>
+        
+        {/* === style react and condition rendem === */}
+        <Zoom in={isExpanded }>
+          <Fab onClick={submitNote}>
+            <AddIcon />
+          </Fab>
+        </Zoom>
       </form>
     </div>
   );
