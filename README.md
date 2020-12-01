@@ -1,6 +1,7 @@
 ## Modulul React - Keeper Part 3
 
 Functionalitatii
+
 -are o componeta header care contine un <h1></h1> si se ocupa de partea de sus a pagini
 
 -are o componeta footer care se ocupa de partea de jos a pagini
@@ -9,7 +10,7 @@ Functionalitatii
 -are o componeta note care se ocupa de preloarea titlului si continului introdus 
     precum si de functia de stergere, aceasta functioneaza cu functia deleteNote implemetat in App.jsx
 
-    
+
 -si ultima componeta CeateArea care se ocupa cu :
 
     = functia de expandare a ferestei 
