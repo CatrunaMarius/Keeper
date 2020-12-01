@@ -1,4 +1,4 @@
-proiectul Kepper Part 3 
+## Modulul React - Keeper Part 3
 
 Functionalitatii
 -are o componeta header care contine un <h1></h1> si se ocupa de partea de sus a pagini
