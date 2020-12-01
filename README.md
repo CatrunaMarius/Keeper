@@ -2,7 +2,7 @@
 
 Functionalitatii
 
--are o componeta header care contine un <h1></h1> si se ocupa de partea de sus a pagini
+-are o componeta header care contine un [<h1></h1>] si se ocupa de partea de sus a pagini
 
 -are o componeta footer care se ocupa de partea de jos a pagini
     si are o functie dinamica de a schimba anul
